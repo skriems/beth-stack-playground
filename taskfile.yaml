@@ -1,0 +1,8 @@
+version: "3"
+
+tasks:
+  install:
+    - bun install
+  develop:
+    - task: install
+    - bun run --watch src/index.tsx
